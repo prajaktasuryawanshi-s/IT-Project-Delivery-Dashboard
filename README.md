@@ -22,7 +22,9 @@ Project managers need to know: Are tickets delivered on time? Which modules prod
 ## DAX Measures
 Total Issues, Open Issues, Bug Count, Avg Resolution Days and On-time Delivery % (see `DAX_Measures.txt`).
 
+
 ## Dashboard
+
 - KPI cards: Total Issues, Open Issues, Bug Count, Avg Resolution Days, On-time Delivery %
 - Monthly ticket trend (line chart)
 - Bugs by module (bar chart)
@@ -30,9 +32,11 @@ Total Issues, Open Issues, Bug Count, Avg Resolution Days and On-time Delivery %
 - Delivery status by team (stacked bar chart)
 - Slicers: Project, Sprint, Priority
 
-![Dashboard overview](Screenshots/Dashboard_Overview.png)
+![Dashboard Overview](Dashboard_Overview.png)
 
-![Data model: one-to-many relationship between Team and Issues](Screenshots/Data_Model.png)
+## Data Model
+
+![Data Model: One-to-many relationship between Team and Issues](Data_Model.png)
 
 ## Key Insights (from the sample data)
 1. 1,500 tickets in total, of which 243 (16%) are still open and 64 are blocked.
