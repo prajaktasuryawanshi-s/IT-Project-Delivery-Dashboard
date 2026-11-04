@@ -36,7 +36,7 @@ Total Issues, Open Issues, Bug Count, Avg Resolution Days and On-time Delivery %
 
 ## Data Model
 
-![Data Model: One-to-many relationship between Team and Issues](Data_Model.png)
+![Data Model](Data_Model.png)
 
 ## Key Insights (from the sample data)
 1. 1,500 tickets in total, of which 243 (16%) are still open and 64 are blocked.
