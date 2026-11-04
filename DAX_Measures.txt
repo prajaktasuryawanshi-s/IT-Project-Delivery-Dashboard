@@ -1,0 +1,27 @@
+IT PROJECT DASHBOARD - DAX MEASURES
+How to use: Report view > click the Issues table in the Data pane > Home > New measure > paste one measure > Enter. Repeat for each measure.
+
+MEASURES USED IN THE DASHBOARD (5)
+
+Total Issues = COUNTROWS(Issues)
+
+Open Issues = CALCULATE(COUNTROWS(Issues), Issues[Status] <> "Done")
+
+Bug Count = CALCULATE(COUNTROWS(Issues), Issues[Issue_Type] = "Bug")
+
+Avg Resolution Days = AVERAGE(Issues[Resolution_Days])
+
+On-time Delivery % = DIVIDE(CALCULATE(COUNTROWS(Issues), Issues[Delivery_Status] = "On-time"), CALCULATE(COUNTROWS(Issues), Issues[Delivery_Status] <> "Pending"))
+
+OPTIONAL EXTRA MEASURES (not used in the dashboard)
+
+Blocked Issues = CALCULATE(COUNTROWS(Issues), Issues[Status] = "Blocked")
+
+Late Issues = CALCULATE(COUNTROWS(Issues), Issues[Delivery_Status] = "Late")
+
+Story Points Done = CALCULATE(SUM(Issues[Story_Points]), Issues[Status] = "Done")
+
+FORMAT TIPS
+- On-time Delivery %: select the measure > Measure tools > Format = Percentage, 1 decimal.
+- Avg Resolution Days: Format = Decimal number, 1 or 2 decimals.
+- If a card shows 2K for 1500: select the card > Format visual > Display units = None.
